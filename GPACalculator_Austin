@@ -1,0 +1,24 @@
+class GPACalculator{
+
+let gradeABlock: Double
+let gradeBBlock: Double
+let gradeCBlock: Double
+let gradeDBlock: Double
+let gradeEBlock: Double
+let gradeFBlock: Double
+let gradeGBlock: Double
+let gradeHBlock: Double
+
+}
+
+let ClassTypeBlock: 
+
+if gradeBlock > 93.5 && ClassTypeBlock AP
+  GPABlock: 5
+else if gradeBlock > 93.5 && ClassTypeBlock Honors
+  GPABlock: 4.5
+else if gradeBlock > 93.5 && ClassTypeBlock CP1
+  GPABlock: 4.0
+else if gradeBlock > 93.5 && ClassTypeBlock AP
+
+
