@@ -1,28 +1,50 @@
 class GPACalculator{
 
-let gradeABlock: Double
-let gradeBBlock: Double
-let gradeCBlock: Double
-let gradeDBlock: Double
-let gradeEBlock: Double
-let gradeFBlock: Double
-let gradeGBlock: Double
-let gradeHBlock: Double
+var gradeBlock: Double
 
 }
 
 let ClassTypeBlock: 
 
-if gradeBlock > 93.5 && ClassTypeBlock AP
-  GPABlock: 5.000
-else if gradeBlock > 93.5 && ClassTypeBlock Honors
-  GPABlock: 4.500
-else if gradeBlock > 93.5 && ClassTypeBlock CP1
-  GPABlock: 4.000
-else if gradeBlock > 89.5 && ClassTypeBlock AP
-  GPABlock: 4.670
-else if gradeBlock > 89.5 && ClassTypeBlock Honors
-  GPABlock: 4.167
-else if gradeBlock > 89.5 && ClassTypeBlock CP1
-  GPABlock: 3.670
+if { gradeBlock > 93.5 && ClassTypeBlock AP
+  GPABlock: 5.000 }
+else if { gradeBlock > 93.5 && ClassTypeBlock Honors
+  GPABlock: 4.500 }
+else if { gradeBlock > 93.5 && ClassTypeBlock CP1
+  GPABlock: 4.000 }
+else if { gradeBlock > 89.5 && ClassTypeBlock AP
+  GPABlock: 4.670 }
+else if { gradeBlock > 89.5 && ClassTypeBlock Honors
+  GPABlock: 4.167 }
+else if { gradeBlock > 89.5 && ClassTypeBlock CP1
+  GPABlock: 3.670 }
+else if { gradeBlock > 85.5 && ClassTypeBlock AP
+  GPABlock: 4.333 }
+else if { gradeBlock > 85.5 && ClassTypeBlock Honors
+  GPABlock: 3.833 }
+else if { gradeBlock > 85.5 && ClassTypeBlock CP1
+  GPABlock: 3.330 }
+else if { gradeBlock > 83.5 && ClassTypeBlock AP
+  GPABlock: 4.000 }
+else if { gradeBlock > 83.5 && ClassTypeBlock Honors
+  GPABlock: 3.500 }
+else if { gradeBlock > 83.5 && ClassTypeBlock CP1
+  GPABlock: 3.000 }
+else if { gradeBlock > 79.5 && ClassTypeBlock AP
+  GPABlock: 3.670 }
+else if { gradeBlock > 79.5 && ClassTypeBlock Honors
+  GPABlock: 3.167 }
+else if { gradeBlock > 79.5 && ClassTypeBlock CP1
+  GPABlock: 2.670 }
+else if {
+
+
+
+
+
+  
+  
+  
+else if gradeBlock < 59.5 
+  GPABlock: 0
 
