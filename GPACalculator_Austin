@@ -36,7 +36,8 @@ else if { gradeBlock > 79.5 && ClassTypeBlock Honors
   GPABlock: 3.167 }
 else if { gradeBlock > 79.5 && ClassTypeBlock CP1
   GPABlock: 2.670 }
-else if {
+else if { gradeBlock > 76.5 && ClassTypeBlock AP
+  GPA 
 
 
 
