@@ -5,7 +5,8 @@ var gradeBlock: Double
 }
 
 let ClassTypeBlock: 
-
+for var counter = 0; counter(1)
+{
 if { gradeBlock > 93.5 && ClassTypeBlock AP
   GPABlock: 5.000 }
 else if { gradeBlock > 93.5 && ClassTypeBlock Honors
@@ -37,8 +38,8 @@ else if { gradeBlock > 79.5 && ClassTypeBlock Honors
 else if { gradeBlock > 79.5 && ClassTypeBlock CP1
   GPABlock: 2.670 }
 else if { gradeBlock > 76.5 && ClassTypeBlock AP
-  GPA 
-
+  GPABlock: 
+}
 
 
 
