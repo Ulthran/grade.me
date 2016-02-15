@@ -1,25 +1,49 @@
-class GPACalculator{
+//  // = Single Line Comment
+//  /* ... */ = Multi Line Comment
 
-var gradeBlock: Double
+/*
+This is what would be called the game logic file. When the app needs to process information given to it by the user it
+sends it here and awaits the response that this file outputs. This particular file should take in a class type and grade
+and then spit out a GPA.
+*/
 
+
+
+
+class GPACalculator{   //Class declaration for app logic file
+//This class is called each time a grade and class level are input
+
+enum classType{  //Defines possible class types
+  static let ap = "AP"  //static is useless, don't worry about it
+  static let honors = "Honors"  //let makes a variable unchangeable; var makes a variable changeable
+  static let cp1 = "CP I"  //It's common practice to name variables and functions with a lower case letter first
+  //It's also common practice to name Classes with an upper case letter first
 }
 
-let ClassTypeBlock: 
-for var counter = 0; counter(1)
-{
-if { gradeBlock > 93.5 && ClassTypeBlock AP
-  GPABlock: 5.000 }
-else if { gradeBlock > 93.5 && ClassTypeBlock Honors
-  GPABlock: 4.500 }
-else if { gradeBlock > 93.5 && ClassTypeBlock CP1
-  GPABlock: 4.000 }
-else if { gradeBlock > 89.5 && ClassTypeBlock AP
+var grade: Double  //Holds the grade value for this class
+var classType: String  //Holds the class type for this class
+var gpa: Double  //Holds the GPA for this class
+
+init(gradeX: Double, classTypeX: String){
+  grade = gradeX  //Takes input of gradeX and ClassTypeX and assigns it to the class variables here
+  classType = classTypeX
+}
+
+
+if grade >= 93.5 && classType == classType.ap {    //If statement only does statements in brackets if the statement(s)
+//following it are true; in this case: "grade >= 93.5 && classType == classType.ap"
+  gpa = 5.000  //This is the statement(s) to be executed
+} else if grade >= 93.5 && classType == classType.honors {
+  gpa = 4.500 
+} else if grade >= 93.5 && classType == classType.cp1 {
+  gpa = 4.000
+} else if { gradeBlock > 89.5 && ClassTypeBlock AP
   GPABlock: 4.670 }
 else if { gradeBlock > 89.5 && ClassTypeBlock Honors
   GPABlock: 4.167 }
 else if { gradeBlock > 89.5 && ClassTypeBlock CP1
   GPABlock: 3.670 }
-else if { gradeBlock > 85.5 && ClassTypeBlock AP
+else if { gradeBlock > 85.5 && ClassTypeBlock AP               //Remodel all the rest of these after what I did above
   GPABlock: 4.333 }
 else if { gradeBlock > 85.5 && ClassTypeBlock Honors
   GPABlock: 3.833 }
@@ -39,14 +63,8 @@ else if { gradeBlock > 79.5 && ClassTypeBlock CP1
   GPABlock: 2.670 }
 else if { gradeBlock > 76.5 && ClassTypeBlock AP
   GPABlock: 
+}else if gradeBlock < 59.5 
+  GPABlock: 0
 }
 
-
-
-
-  
-  
-  
-else if gradeBlock < 59.5 
-  GPABlock: 0
-
+}  //Closes class
