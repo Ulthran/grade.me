@@ -30,12 +30,13 @@ init(gradeX: Double, classTypeX: String){
 }
 
 
-if grade >= 93.5 && classType == classType.ap {    //If statement only does statements in brackets if the statement(s)
-//following it are true; in this case: "grade >= 93.5 && classType == classType.ap"
+if (grade >= 93.5 && classType == classType.ap) {    //If statement only does statements in brackets if the statement(s)
+                                                   //following it are true; in this case: "grade >= 93.5 && classType == 
+                                                   //classType.ap"
   gpa = 5.000  //This is the statement(s) to be executed
-} else if grade >= 93.5 && classType == classType.honors {
+} else if (grade >= 93.5 && classType == classType.honors) {
   gpa = 4.500 
-} else if grade >= 93.5 && classType == classType.cp1 {
+} else if (grade >= 93.5 && classType == classType.cp1) {
   gpa = 4.000
 } else if { gradeBlock > 89.5 && ClassTypeBlock AP
   GPABlock: 4.670 }
