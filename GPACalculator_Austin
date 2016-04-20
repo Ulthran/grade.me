@@ -30,40 +30,39 @@ init(gradeX: Double, classTypeX: String){
 }
 
 
-if grade >= 93.5 && classType == classType.ap {    //If statement only does statements in brackets if the statement(s)
-//following it are true; in this case: "grade >= 93.5 && classType == classType.ap"
-  gpa = 5.000  //This is the statement(s) to be executed
+if grade >= 93.5 && classType == classType.ap {    
+  gpa = 5.000  
 } else if grade >= 93.5 && classType == classType.honors {
   gpa = 4.500 
 } else if grade >= 93.5 && classType == classType.cp1 {
   gpa = 4.000
-} else if { gradeBlock > 89.5 && ClassTypeBlock AP
-  GPABlock: 4.670 }
-else if { gradeBlock > 89.5 && ClassTypeBlock Honors
-  GPABlock: 4.167 }
-else if { gradeBlock > 89.5 && ClassTypeBlock CP1
+} else if grade >= 89.5 && classType == classType.ap {
+  GPABlock: 4.670 
+} else if grade >= 89.5 && classType == classType.honors {
+  GPABlock: 4.167 
+} else if { grade >= 89.5 && ClassTypeBlock CP1
   GPABlock: 3.670 }
-else if { gradeBlock > 85.5 && ClassTypeBlock AP               //Remodel all the rest of these after what I did above
+else if { grade >= 85.5 && ClassTypeBlock AP               
   GPABlock: 4.333 }
-else if { gradeBlock > 85.5 && ClassTypeBlock Honors
+else if { grade >= 85.5 && ClassTypeBlock Honors
   GPABlock: 3.833 }
-else if { gradeBlock > 85.5 && ClassTypeBlock CP1
+else if { grade >= 85.5 && ClassTypeBlock CP1
   GPABlock: 3.330 }
-else if { gradeBlock > 83.5 && ClassTypeBlock AP
+else if { grade >= 83.5 && ClassTypeBlock AP
   GPABlock: 4.000 }
-else if { gradeBlock > 83.5 && ClassTypeBlock Honors
+else if { grade >= 83.5 && ClassTypeBlock Honors
   GPABlock: 3.500 }
-else if { gradeBlock > 83.5 && ClassTypeBlock CP1
+else if { grade >= 83.5 && ClassTypeBlock CP1
   GPABlock: 3.000 }
-else if { gradeBlock > 79.5 && ClassTypeBlock AP
+else if { grade >= 79.5 && ClassTypeBlock AP
   GPABlock: 3.670 }
-else if { gradeBlock > 79.5 && ClassTypeBlock Honors
+else if { grade >= 79.5 && ClassTypeBlock Honors
   GPABlock: 3.167 }
-else if { gradeBlock > 79.5 && ClassTypeBlock CP1
+else if { grade >= 79.5 && ClassTypeBlock CP1
   GPABlock: 2.670 }
-else if { gradeBlock > 76.5 && ClassTypeBlock AP
+else if { grade >= 76.5 && ClassTypeBlock AP
   GPABlock: 
-}else if gradeBlock < 59.5 
+}else if grade =< 59.5 
   GPABlock: 0
 }
 
