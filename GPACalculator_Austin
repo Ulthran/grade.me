@@ -1,11 +1,6 @@
 //  // = Single Line Comment
 //  /* ... */ = Multi Line Comment
 
-/*
-This is what would be called the game logic file. When the app needs to process information given to it by the user it
-sends it here and awaits the response that this file outputs. This particular file should take in a class type and grade
-and then spit out a GPA.
-*/
 
 
 
@@ -37,33 +32,67 @@ if grade >= 93.5 && classType == classType.ap {
 } else if grade >= 93.5 && classType == classType.cp1 {
   gpa = 4.000
 } else if grade >= 89.5 && classType == classType.ap {
-  GPABlock: 4.670 
+  gpa = 4.670 
 } else if grade >= 89.5 && classType == classType.honors {
-  GPABlock: 4.167 
-} else if { grade >= 89.5 && ClassTypeBlock CP1
-  GPABlock: 3.670 }
-else if { grade >= 85.5 && ClassTypeBlock AP               
-  GPABlock: 4.333 }
-else if { grade >= 85.5 && ClassTypeBlock Honors
-  GPABlock: 3.833 }
-else if { grade >= 85.5 && ClassTypeBlock CP1
-  GPABlock: 3.330 }
-else if { grade >= 83.5 && ClassTypeBlock AP
-  GPABlock: 4.000 }
-else if { grade >= 83.5 && ClassTypeBlock Honors
-  GPABlock: 3.500 }
-else if { grade >= 83.5 && ClassTypeBlock CP1
-  GPABlock: 3.000 }
-else if { grade >= 79.5 && ClassTypeBlock AP
-  GPABlock: 3.670 }
-else if { grade >= 79.5 && ClassTypeBlock Honors
-  GPABlock: 3.167 }
-else if { grade >= 79.5 && ClassTypeBlock CP1
-  GPABlock: 2.670 }
-else if { grade >= 76.5 && ClassTypeBlock AP
-  GPABlock: 
-}else if grade =< 59.5 
-  GPABlock: 0
+  gpa = 4.167 
+} else if grade >= 89.5 && classType == classType.cp1 {
+  gpa = 3.670 
+} else if grade >= 85.5 && classType == classType.ap {               
+  gpa = 4.333 
+} else if grade >= 85.5 && classType == classType.honors {
+  gpa = 3.833 
+} else if grade >= 85.5 && classType == classType.cp1 {
+  gpa = 3.330 
+} else if grade >= 83.5 && classType == classType.ap {
+  gpa = 4.000 
+} else if grade >= 83.5 && classType == classType.honors {
+  gpa = 3.500
+} else if grade >= 83.5 && classType == classType.cp1 {
+  gpa = 3.000 
+} else if grade >= 79.5 && classType == classType.ap {
+  gpa = 3.670 
+} else if grade >= 79.5 && classType == classType.honors {
+  gpa = 3.167 
+} else if grade >= 79.5 && classType == classType.cp1 {
+  gpa = 2.670 
+} else if grade >= 76.5 && classType == classType.ap {
+  gpa = 3.330
+} else if grade >= 76.5 && classType == classType.honors {
+  gpa = 2.833
+} else if grade >= 76.5 && classType == classType.cp1 {
+  gpa = 2.330
+} else if grade >= 73.5 && classType == classType.ap {
+  gpa = 3.000   
+} else if grade >= 73.5 && classType == classType.honors {
+  gpa = 2.500  
+} else if grade >= 73.5 && classType == classType.cp1 {
+  gpa = 2.000
+} else if grade >= 69.5 && classType == classType.ap {
+  gpa = 2.670  
+} else if grade >= 69.5 && classType == classType.honors {
+  gpa = 2.167  
+} else if grade >= 69.5 && classType == classType.cp1 {
+  gpa = 1.670    
+} else if grade >= 66.5 && classType == classType.ap {
+  gpa = 2.330  
+} else if grade >= 66.5 && classType == classType.honors {
+  gpa = 1.830
+} else if grade >= 66.5 && classType == classType.cp1 {
+  gpa = 1.330  
+} else if grade >= 63.5 && classType == classType.ap {
+  gpa = 2.000
+} else if grade >= 63.5 && classType == classType.honors {
+  gpa = 1.500
+} else if grade >= 63.5 && classType == classType.cp1 {
+  gpa = 1.000
+} else if grade >= 59.5 && classType == classType.ap {
+  gpa = 1.670
+} else if grade >= 59.5 && classType == classType.honors {
+  gpa = 0.670
+} else if grade >= 59.5 && classType == classType.cp1 {
+  gpa = 0.167
+} else if grade < 59.5 
+  gpa = 0
 }
 
-}  //Closes class
+
