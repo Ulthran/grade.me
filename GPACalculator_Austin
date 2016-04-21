@@ -1,26 +1,25 @@
-//  // = Single Line Comment
-//  /* ... */ = Multi Line Comment
 
 
 
 
+repeat {
+class GPACalculator 
 
-class GPACalculator{   //Class declaration for app logic file
-//This class is called each time a grade and class level are input
 
-enum classType{  //Defines possible class types
-  static let ap = "AP"  //static is useless, don't worry about it
-  static let honors = "Honors"  //let makes a variable unchangeable; var makes a variable changeable
-  static let cp1 = "CP I"  //It's common practice to name variables and functions with a lower case letter first
-  //It's also common practice to name Classes with an upper case letter first
+class GPACalculator{   
+
+enum classType{  
+  static let ap = "AP"  
+  static let honors = "Honors"  
+  static let cp1 = "CP I"  
 }
 
-var grade: Double  //Holds the grade value for this class
-var classType: String  //Holds the class type for this class
-var gpa: Double  //Holds the GPA for this class
+var grade: Double  
+var classType: String  
+var gpa: Double  
 
 init(gradeX: Double, classTypeX: String){
-  grade = gradeX  //Takes input of gradeX and ClassTypeX and assigns it to the class variables here
+  grade = gradeX  
   classType = classTypeX
 }
 
@@ -91,8 +90,10 @@ if grade >= 93.5 && classType == classType.ap {
   gpa = 0.670
 } else if grade >= 59.5 && classType == classType.cp1 {
   gpa = 0.167
-} else if grade < 59.5 
+} else grade < 59.5 {
   gpa = 0
+}
+
 }
 
 
