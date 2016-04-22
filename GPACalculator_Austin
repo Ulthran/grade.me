@@ -1,99 +1,92 @@
-
-
-
-
-
-class GPACalculator{   
-
-enum classType{  
-  static let ap = "AP"  
-  static let honors = "Honors"  
-  static let cp1 = "CP I"  
+class GPACalculator{
+    
+    enum classType{
+        static let ap = "AP"
+        static let honors = "Honors"
+        static let cp1 = "CP I"
+    }
+    
+    private var grade: Double
+    private var classLevel: String
+    private var gpa: Double
+    
+    init(gradeX: Double, classTypeX: String){
+        grade = gradeX
+        classLevel = classTypeX
+        
+        if grade >= 93.5 && classLevel == classType.ap {
+            gpa = 5.000
+        } else if grade >= 93.5 && classLevel == classType.honors {
+            gpa = 4.500
+        } else if grade >= 93.5 && classType.equals(classType.cp1) {
+            gpa = 4.000
+        } else if grade >= 89.5 && classType.equals(classType.ap) {
+            gpa = 4.670
+        } else if grade >= 89.5 && classType.equals(classType.honors) {
+            gpa = 4.167
+        } else if grade >= 89.5 && classType.equals(classType.cp1) {
+            gpa = 3.670
+        } else if grade >= 85.5 && classType.equals(classType.ap) {
+            gpa = 4.333
+        } else if grade >= 85.5 && classType.equals(classType.honors) {
+            gpa = 3.833
+        } else if grade >= 85.5 && classType.equals(classType.cp1) {
+            gpa = 3.330
+        } else if grade >= 83.5 && classType.equals(classType.ap) {
+            gpa = 4.000
+        } else if grade >= 83.5 && classType.equals(classType.honors) {
+            gpa = 3.500
+        } else if grade >= 83.5 && classType.equals(classType.cp1) {
+            gpa = 3.000
+        } else if grade >= 79.5 && classType.equals(classType.ap) {
+            gpa = 3.670
+        } else if grade >= 79.5 && classType.equals(classType.honors) {
+            gpa = 3.167
+        } else if grade >= 79.5 && classType.equals(classType.cp1) {
+            gpa = 2.670
+        } else if grade >= 76.5 && classType.equals(classType.ap) {
+            gpa = 3.330
+        } else if grade >= 76.5 && classType.equals(classType.honors) {
+            gpa = 2.833
+        } else if grade >= 76.5 && classType.equals(classType.cp1) {
+            gpa = 2.330
+        } else if grade >= 73.5 && classType.equals(classType.ap) {
+            gpa = 3.000
+        } else if grade >= 73.5 && classType.equals(classType.honors) {
+            gpa = 2.500
+        } else if grade >= 73.5 && classType.equals(classType.cp1) {
+            gpa = 2.000
+        } else if grade >= 69.5 && classType.equals(classType.ap) {
+            gpa = 2.670
+        } else if grade >= 69.5 && classType.equals(classType.honors) {
+            gpa = 2.167
+        } else if grade >= 69.5 && classType.equals(classType.cp1) {
+            gpa = 1.670
+        } else if grade >= 66.5 && classType.equals(classType.ap) {
+            gpa = 2.330
+        } else if grade >= 66.5 && classType.equals(classType.honors) {
+            gpa = 1.830
+        } else if grade >= 66.5 && classType.equals(classType.cp1) {
+            gpa = 1.330
+        } else if grade >= 63.5 && classType.equals(classType.ap) {
+            gpa = 2.000
+        } else if grade >= 63.5 && classType.equals(classType.honors) {
+            gpa = 1.500
+        } else if grade >= 63.5 && classType.equals(classType.cp1) {
+            gpa = 1.000
+        } else if grade >= 59.5 && classType.equals(classType.ap) {
+            gpa = 1.670
+        } else if grade >= 59.5 && classType.equals(classType.honors){
+            gpa = 0.670
+        } else if grade >= 59.5 && classType.equals(classType.cp1) {
+            gpa = 0.167
+        } else grade < 59.5 {
+            gpa = 0
+        }
+    }
+    
+    func getGPA() -> Double {
+        return gpa
+    }
+    
 }
-
-private var grade: Double  
-private var classType: String  
-private var gpa: Double  
-
-init(gradeX: Double, classTypeX: String){
-  grade = gradeX  
-  classType = classTypeX
-
-  if grade >= 93.5 && classType.equals(classType.ap) {    
-    gpa = 5.000  
-  } else if grade >= 93.5 && classType.equals(classType.honors) {
-    gpa = 4.500 
-  } else if grade >= 93.5 && classType.equals(classType.cp1) {
-    gpa = 4.000
-  } else if grade >= 89.5 && classType.equals(classType.ap) {
-    gpa = 4.670 
-  } else if grade >= 89.5 && classType.equals(classType.honors) {
-    gpa = 4.167 
-  } else if grade >= 89.5 && classType.equals(classType.cp1) {
-    gpa = 3.670 
-  } else if grade >= 85.5 && classType.equals(classType.ap) {               
-    gpa = 4.333 
-  } else if grade >= 85.5 && classType.equals(classType.honors) {
-    gpa = 3.833 
-  } else if grade >= 85.5 && classType.equals(classType.cp1) {
-    gpa = 3.330 
-  } else if grade >= 83.5 && classType.equals(classType.ap) {
-    gpa = 4.000 
-  } else if grade >= 83.5 && classType.equals(classType.honors) {
-    gpa = 3.500
-  } else if grade >= 83.5 && classType.equals(classType.cp1) {
-    gpa = 3.000 
-  } else if grade >= 79.5 && classType.equals(classType.ap) {
-    gpa = 3.670 
-  } else if grade >= 79.5 && classType.equals(classType.honors) {
-    gpa = 3.167 
-  } else if grade >= 79.5 && classType.equals(classType.cp1) {
-    gpa = 2.670 
-  } else if grade >= 76.5 && classType.equals(classType.ap) {
-    gpa = 3.330
-  } else if grade >= 76.5 && classType.equals(classType.honors) {
-    gpa = 2.833
-  } else if grade >= 76.5 && classType.equals(classType.cp1) {
-    gpa = 2.330
-  } else if grade >= 73.5 && classType.equals(classType.ap) {
-    gpa = 3.000   
-  } else if grade >= 73.5 && classType.equals(classType.honors) {
-    gpa = 2.500  
-  } else if grade >= 73.5 && classType.equals(classType.cp1) {
-    gpa = 2.000
-  } else if grade >= 69.5 && classType.equals(classType.ap) {
-    gpa = 2.670  
-  } else if grade >= 69.5 && classType.equals(classType.honors) {
-    gpa = 2.167  
-  } else if grade >= 69.5 && classType.equals(classType.cp1) {
-    gpa = 1.670    
-  } else if grade >= 66.5 && classType.equals(classType.ap) {
-    gpa = 2.330  
-  } else if grade >= 66.5 && classType.equals(classType.honors) {
-    gpa = 1.830
-  } else if grade >= 66.5 && classType.equals(classType.cp1) {
-    gpa = 1.330  
-  } else if grade >= 63.5 && classType.equals(classType.ap) {
-    gpa = 2.000
-  } else if grade >= 63.5 && classType.equals(classType.honors) {
-    gpa = 1.500
-  } else if grade >= 63.5 && classType.equals(classType.cp1) {
-    gpa = 1.000
-  } else if grade >= 59.5 && classType.equals(classType.ap) {
-    gpa = 1.670
-  } else if grade >= 59.5 && classType.equals(classType.honors){
-    gpa = 0.670
-  } else if grade >= 59.5 && classType.equals(classType.cp1) {
-    gpa = 0.167
-  } else grade < 59.5 {
-    gpa = 0
-  }
-}
-
-func getGPA() -> Double {
-  return gpa
-}
-
-}
-
-
